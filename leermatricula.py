@@ -41,21 +41,21 @@ def leer_matricula(image_path):
     print(f'Matrícula: {matricula}')
 
     # Opcional: muestra la imagen con el texto detectado
-    for (bbox, text, prob) in result:
-        (top_left, top_right, bottom_right, bottom_left) = bbox
-        top_left = tuple(map(int, top_left))
-        top_right = tuple(map(int, top_right))
-        bottom_right = tuple(map(int, bottom_right))
-        bottom_left = tuple(map(int, bottom_left))
+    #for (bbox, text, prob) in result:
+ #       (top_left, top_right, bottom_right, bottom_left) = bbox
+ #       top_left = tuple(map(int, top_left))
+  #      top_right = tuple(map(int, top_right))
+   #     bottom_right = tuple(map(int, bottom_right))
+    #    bottom_left = tuple(map(int, bottom_left))
         
-        cv2.rectangle(image_rgb, top_left, bottom_right, (0, 255, 0), 2)
-        cv2.putText(image_rgb, text, (top_left[0], top_left[1] - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 0, 0), 2)
+     #   cv2.rectangle(image_rgb, top_left, bottom_right, (0, 255, 0), 2)
+      #  cv2.putText(image_rgb, text, (top_left[0], top_left[1] - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 0, 0), 2)
 
     #Muestra la imagen (opcional)
-    import matplotlib.pyplot as plt
-    plt.imshow(image_rgb)
-    plt.axis('off')
-    plt.show()
+   # import matplotlib.pyplot as plt
+    #plt.imshow(image_rgb)
+    #plt.axis('off')
+    #plt.show()
 
     return matricula
 
@@ -68,7 +68,7 @@ def limpiar_matricula(matricula):
 
 
 # Ejemplo de uso de la función
-image_path = 'auto9.jpg'  # Actualiza esta ruta según corresponda
+image_path = 'matricula_1.jpg'  # Actualiza esta ruta según corresponda
 matricula = leer_matricula(image_path)
 print(f'La matrícula leída es: {matricula}')
 matriculaprocesada= limpiar_matricula(matricula)

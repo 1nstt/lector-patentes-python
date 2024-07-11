@@ -1,9 +1,10 @@
-Instrucciones de uso:
+Identificar.py:
+Este script se encarga de identificar posibles patentes dentro de una imagen utilizando algoritmos de procesamiento de imágenes. Uno de los algoritmos utilizados es el detector de bordes de Canny, que detecta contornos dentro de la imagen. Estos contornos se filtran según su área para identificar aquellos que podrían ser patentes. El parámetro del área es configurable, permitiendo ajustes según las necesidades específicas. Una vez que se identifica la región de interés, el script recorta la imagen y genera una nueva imagen que contiene solo la patente.
+
+leermatricula.py:
+Este script se encarga de leer la patente de la imagen recortada generada por "identificar.py". Utiliza la biblioteca EASYOCR, una herramienta de reconocimiento óptico de caracteres (OCR) que facilita la lectura de texto en imágenes. EASYOCR es conocida por su precisión y capacidad para reconocer texto en múltiples idiomas y formatos. El script devuelve la matrícula como una cadena de texto, permitiendo su uso posterior en aplicaciones o bases de datos.
 
 
-El lector cuenta de 2 codigos.
 
-Identificar.py: Este codigo se encarga de identificar posibles patentes dentro de una imagen, esto utilizando ciertos algoritmos de procesamiento de imagenes como el detector de bordes de canny, el cual detecta contornos dentro de la imagen que posteriormente filtra por el area de estos para guardarlos como patentes.
-El parametro area es perfectamente configurable dependiendo de tus necesidades. Una vez se identifica la regiòn de interes, el script corta la imagen y deja una imagen nueva la cual contiene SOLO la patente.
-
-
+Nota Importante
+Este lector fue desarrollado como parte de un proyecto universitario para una asignatura. No ha sido exhaustivamente probado ya que no estaba destinado para su venta o uso comercial. Me aseguré de que funcionara para los casos específicos necesarios para calificar en el curso. Por lo tanto, dependiendo del uso que se le quiera dar, es posible que se requiera un testeo más profundo y quizás algunas correcciones adicionales.

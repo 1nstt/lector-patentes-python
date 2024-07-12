@@ -1,3 +1,5 @@
+Se realiza la deteccion y lecura con 2 scripts:
+
 Identificar.py:
 Este script se encarga de identificar posibles patentes dentro de una imagen utilizando algoritmos de procesamiento de imágenes. Uno de los algoritmos utilizados es el detector de bordes de Canny, que detecta contornos dentro de la imagen. Estos contornos se filtran según su área para identificar aquellos que podrían ser patentes. El parámetro del área es configurable, permitiendo ajustes según las necesidades específicas. Una vez que se identifica la región de interés, el script recorta la imagen y genera una nueva imagen que contiene solo la patente.
 

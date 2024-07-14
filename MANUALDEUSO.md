@@ -10,5 +10,5 @@ Este script se encarga de leer la patente de la imagen recortada generada por "i
 Caso ejemplo: En el caso ejemplo se puede utilizar la imagen que se encuentra guardada como "auto1.jpg". Primero, ejecutando el script "identificar.py" se obtendrá la nueva imagen de la región de la patente guardada en otro archivo llamado "matricula_1.jpg". Posteriormente, se ejecuta el script "leermatricula.py" el cual se encargará de leer los caracteres de "matricula_1.jpg" y los imprimirá en la consola.
 
 
-Nota Importante
+Nota Importante:
 Este lector fue desarrollado como parte de un proyecto universitario para una asignatura. No ha sido exhaustivamente probado ya que no estaba destinado para su venta o uso comercial. Me aseguré de que funcionara para los casos específicos necesarios para calificar en el curso. Por lo tanto, dependiendo del uso que se le quiera dar, es posible que se requiera un testeo más profundo y quizás algunas correcciones adicionales.

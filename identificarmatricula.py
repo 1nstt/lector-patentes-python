@@ -45,4 +45,3 @@ guardar_matriculas(ruta_imagen, matriculas_detectadas)
 print("Número de matrículas detectadas y guardadas:", len(matriculas_detectadas))
 
 
-#PROBLEMAS SIN SOLUCIONAR DEL CODIGO: Cuando detecta mas de un texto, se queda con el ultimo.
